@@ -1,0 +1,12 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_layout.scss';
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+* {
+    box-sizing: border-box;
+}

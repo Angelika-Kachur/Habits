@@ -1,0 +1,30 @@
+@mixin center($max-width) {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+@mixin multiline-truncate($line-number) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line-number;
+}
+
+/* Max Width */
+@mixin for-mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin for-desktop {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
