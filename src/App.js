@@ -6,11 +6,13 @@ import Login from "./auth/Login";
 import SignUp from "./auth/SignUp";
 import { AuthProvider } from "./auth/Auth";
 import PrivateRoute from "./auth/PrivateRoute";
+import Header from "./components/Header.js"
 
 const App = () => {
   return (
     <AuthProvider>
       <Router>
+      <Header />
         <PrivateRoute exact path="/" component={Home} />
         <Route exact path="/login" component={Login} />
         <Route exact path="/signup" component={SignUp} />
